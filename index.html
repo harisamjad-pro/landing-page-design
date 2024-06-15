@@ -6,41 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SharkStudio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="logo">SharkStudio</a></li>
-                <li><a href="#">Phones</a></li>
-                <li><a href="#">Laptops</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">TVs</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">More</a></li>
-                <li><a href="#">Support</a></li>
+    <header class="bg-dark-blur position-fixed fix-top">
+        <nav class="content-box box-med">
+            <ul class="display-flex flex-single align-center justify-between">
+                <li><a href="index.html" class="logo link">SharkStudio</a></li>
+                <li><a href="#" class="link">Phones</a></li>
+                <li><a href="#" class="link">Laptops</a></li>
+                <li><a href="#" class="link">TV & Home</a></li>
+                <li><a href="#" class="link">Entertainment</a></li>
+                <li><a href="#" class="link">Accessories</a></li>
+                <li><a href="#" class="link">Studio</a></li>
+                <li><a href="#" class="link">More</a></li>
+                <li><a href="#" class="link">Support</a></li>
+                <li><a href="#" class="link"><box-icon name='search' size="20px"
+                            class="icon"></box-icon></a></li>
+                <li><a href="#" class="link"><box-icon name='shopping-bag' size="20px"
+                            class="icon"></box-icon></a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="wrapper-container">
-        <div class="container-content bg-gray">
-            <div class="content-box short text-center">
-                <span><a href="#">Buy products online</a> and get upto 75% discount. Limited offer available.</span>
-            </div>
+    <div class="container-content bg-gray fixed-adjust">
+        <div class="content-box short text-center box-min">
+            <span><a href="#">Buy products online</a> and get upto 75% discount. Limited offer available.</span>
         </div>
-        <div class="container-content bg-hero flex align-center">
-            <div class="content-box text-center text-light">
+    </div>
+
+    <main class="wrapper-container display-grid grid-single">
+        <div class="container-content bg-black display-flex align-center border-bottom-radius">
+            <div class="content-box text-center text-light box-max">
                 <h1>Shark Intelligence</h1>
                 <p>Comes with more excitement!</p>
-                <div class="flex justify-center gap-24">
+                <div class="display-flex justify-center flex-single">
                     <button>Learn more</button>
-                    <button class="outline">Watch video</button>
+                    <button class="outlined">Watch video</button>
+                </div>
+                <figure class="display-flex justify-center">
+                    <img src="img/hero.png" class="width-fit" alt="Hero Image">
+                </figure>
+            </div>
+        </div>
+        <div class="container-content bg-hero-dark display-flex align-center border-top-radius">
+            <div class="content-box text-center text-light box-max">
+                <h1>Shark Intelligence</h1>
+                <p>Comes with more excitement!</p>
+                <div class="display-flex justify-center flex-single">
+                    <button>Learn more</button>
+                    <button class="outlined">Watch video</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
